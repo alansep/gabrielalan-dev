@@ -2,6 +2,13 @@ pipeline {
     agent any
 
     stages {
+        stage ('Where am I?'){
+            steps {
+                script {
+                    sh 'pwd'
+                }
+            }
+        }
         stage ('Preparando compilação'){
             steps {
                 script {
