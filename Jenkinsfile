@@ -9,6 +9,13 @@ pipeline {
                 }
             }
         }
+         stage ('Who am I?'){
+            steps {
+                script {
+                    sh 'whoami'
+                }
+            }
+        }
         stage ('Preparando compilação'){
             steps {
                 script {
