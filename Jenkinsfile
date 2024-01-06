@@ -16,20 +16,6 @@ pipeline {
                 }
             }
         }
-        stage ('Where am I?'){
-            steps {
-                script {
-                    sh 'pwd'
-                }
-            }
-        }
-         stage ('Who am I?'){
-            steps {
-                script {
-                    sh 'whoami'
-                }
-            }
-        }
         stage ('Publicando projeto'){
             steps {
                 script {
