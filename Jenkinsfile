@@ -2,20 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage ('Where am I?'){
-            steps {
-                script {
-                    sh 'pwd'
-                }
-            }
-        }
-         stage ('Who am I?'){
-            steps {
-                script {
-                    sh 'whoami'
-                }
-            }
-        }
         stage ('Preparando compilação'){
             steps {
                 script {
@@ -27,6 +13,20 @@ pipeline {
             steps {
                 script {
                     sh 'ng build --base-href .'
+                }
+            }
+        }
+        stage ('Where am I?'){
+            steps {
+                script {
+                    sh 'pwd'
+                }
+            }
+        }
+         stage ('Who am I?'){
+            steps {
+                script {
+                    sh 'whoami'
                 }
             }
         }
