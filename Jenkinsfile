@@ -19,7 +19,7 @@ pipeline {
         stage ('Publicando projeto'){
             steps {
                 script {
-                    sh 'cp ./dist/gabrielalan-dev/* /var/www/html/'
+                    sh 'cp -r ./dist/gabrielalan-dev/* /var/www/html/'
                 }
             }
         }
