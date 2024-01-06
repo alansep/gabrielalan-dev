@@ -33,7 +33,7 @@ pipeline {
         stage ('Publicando projeto'){
             steps {
                 script {
-                    sh 'cp -r /home/ubuntu/links/compilados/gabrielalan-dev/* /home/ubuntu/links/producao/'
+                    sh 'cp /home/ubuntu/links/compilados/cat.txt /home/ubuntu/links/producao/'
                 }
             }
         }
