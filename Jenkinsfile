@@ -33,7 +33,7 @@ pipeline {
         stage ('Publicando projeto'){
             steps {
                 script {
-                    sh 'cp ./dist/gabrielalan-dev/* /home/ubuntu/links/deployment'
+                    sh 'cp ./dist/gabrielalan-dev/* /var/www/html/'
                 }
             }
         }
