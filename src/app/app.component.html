@@ -1,68 +1,86 @@
-<div class="portuguese" *ngIf="shouldShowInPortuguese">
+<br>
 
-  <p class="developer-font">
-    Desenvolvedor e músico nas horas vagas. Entusiasta do ato de criar.
-  </p>
+<div class="container-fluid">
 
-  <p class="developer-font">
-    Desde 2017 tenho atuado com Java e Javascript no desenvolvimento de serviços e aplicações como webservices,
-    aplicações web e híbridas.
-  </p>
+  <div class="d-flex flex-column align-items-center">
 
-  <p class="developer-font">
-    Relacionado ao mundo Java e Backend, possuo conhecimento das seguintes tecnologias: Spring Boot; Servlets; JSP;
-    JSTL; JDBC; JPA; Java Swing.
+    <div class="portuguese" *ngIf="shouldShowInPortuguese">
 
-  <p class="developer-font">
-    Em Frontend, possuo experiência com HTML, Javascript, CSS, Angular, Ionic, Bootstrap, Materialize e Sass.
-  </p>
+      <p class="developer-font">
+        Desenvolvedor e músico nas horas vagas. Entusiasta do ato de criar.
+      </p>
 
-  <p class="developer-font">
-    Por fim, relacionado a DevOps e SGDBs, possuo conhecimento em Docker, Amazon EC2, Git, Linux (Debian e distribuições
-    semelhantes), Apache Tomcat, Windows, Maven, MySQL, PostgreSQL, Oracle e MongoDB.
-  </p>
+      <p class="developer-font">
+        Desde 2017 tenho atuado com Java e Javascript no desenvolvimento de serviços e aplicações como webservices,
+        aplicações web e híbridas.
+      </p>
 
-  <p class="developer-font">
-    Construir boas soluções em meio a tantas ferramentas, compartilhar conhecimento e usar a criatividade são fatores
-    muito importantes para o desenvolvimento da minha carreira como desenvolvedor e aprecio realizar cada uma destas
-    coisas.
-  </p>
+      <p class="developer-font">
+        Relacionado ao mundo Java e Backend, possuo conhecimento das seguintes tecnologias: Spring Boot; Servlets; JSP;
+        JSTL; JDBC; JPA; Java Swing.
 
-  <p class="developer-font">
-    Caso queira trocar conhecimento e ideias, sinta-se livre para entrar em contato comigo através de uma mensagem
-    direta, ou por meio de meu e-mail: gabrielalanmg@outlook.com.
-  </p>
+      <p class="developer-font">
+        Em Frontend, possuo experiência com HTML, Javascript, CSS, Angular, Ionic, Bootstrap, Materialize e Sass.
+      </p>
+
+      <p class="developer-font">
+        Por fim, relacionado a DevOps e SGDBs, possuo conhecimento em Docker, Amazon EC2, Git, Linux (Debian e
+        distribuições
+        semelhantes), Apache Tomcat, Windows, Maven, MySQL, PostgreSQL, Oracle e MongoDB.
+      </p>
+
+      <p class="developer-font">
+        Construir boas soluções em meio a tantas ferramentas, compartilhar conhecimento e usar a criatividade são
+        fatores
+        muito importantes para o desenvolvimento da minha carreira como desenvolvedor e aprecio realizar cada uma destas
+        coisas.
+      </p>
+
+      <p class="developer-font">
+        Caso queira trocar conhecimento e ideias, sinta-se livre para entrar em contato comigo através de uma mensagem
+        direta, ou por meio de meu e-mail: gabrielalanmg@outlook.com.
+      </p>
+    </div>
+
+    <div class="portuguese" *ngIf="!shouldShowInPortuguese">
+
+      <p class="developer-font">
+        Developer and musician in my spare time. Enthusiast of creating.
+      </p>
+
+      <p class="developer-font">
+        I have been working with Java and Javascript since 2017, on the development of services and applications such as
+        web services, hybrid, and web applications.
+      </p>
+
+      <p class="developer-font">
+        Related to the Java and Backend world, I know the following technologies: Spring Boot; Servlet; JSP; JSTL; JDBC;
+        JPA; Java Swing.
+
+      <p class="developer-font">
+        On Frontend Development, I have experience with HTML, Javascript, CSS, Angular, Ionic, Bootstrap, Materialize,
+        and Sass.
+      </p>
+
+      <p class="developer-font">
+        Finally, related to DevOps and DBMS, I know Docker, Amazon EC2, Git, Linux (Debian and similar distributions),
+        Apache Tomcat, Windows, Maven, MySQL, PostgreSQL, Oracle and MongoDB.
+      </p>
+
+      <p class="developer-font">
+        Building good solutions, sharing knowledge, and using creativity are very important factors for the development
+        of my career as a developer and I enjoy doing each of these things.
+      </p>
+
+      <p class="developer-font">
+        If you want to exchange knowledge and ideas, feel free to contact me through a direct message, or through my
+        email: gabrielalanmg@gmail.com.
+      </p>
+    </div>
+
+    <img src="../assets/brazil-flag.png" width="175px" height="100px" (click)="shouldShowInPortuguese = true"
+      *ngIf="!shouldShowInPortuguese">
+    <img src="../assets/us-flag.png" width="175px" height="100px" (click)="shouldShowInPortuguese = false"
+      *ngIf="shouldShowInPortuguese">
+  </div>
 </div>
-
-<div class="portuguese" *ngIf="!shouldShowInPortuguese">
-
-  <p class="developer-font">
-    Developer and musician in my spare time. Enthusiast of creating.
-  </p>
-
-  <p class="developer-font">
-    I have been working with Java and Javascript since 2017, on the development of services and applications such as web services, hybrid, and web applications.
-  </p>
-
-  <p class="developer-font">
-    Related to the Java and Backend world, I know the following technologies: Spring Boot; Servlet; JSP; JSTL; JDBC; JPA; Java Swing.
-
-  <p class="developer-font">
-    On Frontend Development, I have experience with HTML, Javascript, CSS, Angular, Ionic, Bootstrap, Materialize, and Sass.
-  </p>
-
-  <p class="developer-font">
-    Finally, related to DevOps and DBMS, I know Docker, Amazon EC2, Git, Linux (Debian and similar distributions), Apache Tomcat, Windows, Maven, MySQL, PostgreSQL, Oracle and MongoDB.
-  </p>
-
-  <p class="developer-font">
-    Building good solutions, sharing knowledge, and using creativity are very important factors for the development of my career as a developer and I enjoy doing each of these things.
-  </p>
-
-  <p class="developer-font">
-    If you want to exchange knowledge and ideas, feel free to contact me through a direct message, or through my email: gabrielalanmg@gmail.com.
-  </p>
-</div>
-
-<img src="../assets/brazil-flag.png" width="175px" height="100px" (click)="shouldShowInPortuguese = true" *ngIf="!shouldShowInPortuguese">
-<img src="../assets/us-flag.png" width="175px" height="100px" (click)="shouldShowInPortuguese = false"  *ngIf="shouldShowInPortuguese">
