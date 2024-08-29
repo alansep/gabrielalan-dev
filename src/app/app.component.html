@@ -81,9 +81,15 @@
       </p>
     </div>
 
-    <img src="../assets/brazil-flag.png" width="175px" height="100px" (click)="shouldShowInPortuguese = true"
+
+    <img src="../assets/brazil-flag.png" width="175px" height="100px" (click)="shouldShowInPortuguese = true" style="cursor: pointer;"
       *ngIf="!shouldShowInPortuguese">
-    <img src="../assets/us-flag.png" width="175px" height="100px" (click)="shouldShowInPortuguese = false"
+    <img src="../assets/us-flag.png" width="175px" height="100px" (click)="shouldShowInPortuguese = false" style="cursor: pointer;"
       *ngIf="shouldShowInPortuguese">
   </div>
+  <br><br>
+</div>
+<div style="width: 100%; background-color: rgb(43, 43, 82); color: white; text-decoration: none; text-align: center; position: fixed; bottom: 0;">
+  Explore some tools
+  <a href="http://ec2-107-20-248-254.compute-1.amazonaws.com:9090/tools/swagger-ui/index.html">here</a>
 </div>
